@@ -1,14 +1,14 @@
 /* Reset dan variabel */
+/* Opsi 3 */
 :root {
-    --primary-color: #2C3E50;
-    --secondary-color: #34495E;
-    --accent-color: #3498DB;
-    --text-color: #2C3E50;
-    --light-bg: #ECF0F1;
+    --primary-color: #355C7D; /* Slate Blue */
+    --secondary-color: #6C5B7B; /* Mauve Purple */
+    --accent-color: #C06C84; /* Soft Rose */
+    --text-color: #355C7D; /* Slate Blue */
+    --light-bg: #FFF7E6; /* Soft Beige */
     --white: #FFFFFF;
     --max-width: 1200px;
 }
-
 * {
     margin: 0;
     padding: 0;
