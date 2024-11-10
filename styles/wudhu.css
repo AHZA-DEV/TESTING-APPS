@@ -1,0 +1,311 @@
+/* Wudhu Guide Styles */
+.wudhu-guide {
+    padding-top: 80px;
+}
+
+.guide-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../assets/wudhu-header-bg.jpg') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.guide-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.guide-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Steps Navigation */
+.step-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: fit-content;
+    margin: 2rem auto;
+}
+
+.nav-btn {
+    background: var(--accent-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    background: var(--primary-color);
+}
+
+.nav-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#stepIndicator {
+    font-weight: bold;
+    color: var(--text-color);
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Steps Container */
+.wudhu-steps {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.steps-container {
+    position: relative;
+    min-height: 500px; /* Menyesuaikan tinggi minimum konten */
+}
+
+.step-card {
+    display: none;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.step-card.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-content {
+    padding: 2rem;
+}
+
+.step-content h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.step-image {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--light-bg);
+    border-radius: 10px;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.step-description {
+    text-align: center;
+    padding: 1rem;
+}
+
+.arabic {
+    font-family: 'Traditional Arabic', 'Scheherazade New', serif;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    direction: rtl;
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+
+.latin {
+    color: var(--secondary-color);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.translation {
+    color: var(--text-color);
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--light-bg);
+    border-radius: 8px;
+}
+
+/* Info Section */
+.wudhu-info {
+    background-color: var(--light-bg);
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.wudhu-info h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guide-header h1 {
+        font-size: 2rem;
+    }
+
+    .step-navigation {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    #stepIndicator {
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+
+    .arabic {
+        font-size: 1.6rem;
+    }
+
+    .step-content {
+        padding: 1rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
+/* Animations */
+.step-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.step-card.sliding-left {
+    animation: slideLeft 0.3s ease-out;
+}
+
+.step-card.sliding-right {
+    animation: slideRight 0.3s ease-out;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav-btn,
+    .navbar,
+    .footer {
+        display: none;
+    }
+
+    .step-card {
+        display: block;
+        page-break-inside: avoid;
+        margin-bottom: 2rem;
+    }
+
+    .step-image img {
+        max-width: 80%;
+    }
+}
+
+
+
+
+
+
+
+

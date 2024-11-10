@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Wudhu - Panduan Shalat & Wudhu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/wudhu.css">
+</head>
+
+<body>
+    <!-- Header sama seperti index.html -->
+    <header>
+        <nav class="navbar">
+            <!-- <div class="logo">
+                <img src="../assets/logo.png" alt="Logo Al-Masbah" id="logo">
+            </div> -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="wudhu-guide.html" class="active">Wudhu</a></li>
+                <li><a href="shalat-guide.html">Shalat</a></li>
+                <li><a href="about.html">Tentang</a></li>
+            </ul>
+            <!-- <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="wudhu-guide">
+        <section class="guide-header">
+            <h1>Panduan Wudhu</h1>
+            <p>Pelajari tata cara wudhu yang benar sesuai dengan tuntunan Islam</p>
+        </section>
+
+        <section class="wudhu-steps">
+            <div class="step-navigation">
+                <button id="prevStep" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <span id="stepIndicator">Langkah 1 dari 9</span>
+                <button id="nextStep" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="steps-container">
+                <!-- Step 1: Niat -->
+                <div class="step-card active" data-step="1">
+                    <div class="step-content">
+                        <h2>1. Niat</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/niat.png" alt="Niat Wudhu">
+                        </div> -->
+                        <div class="step-description">
+                            <p class="arabic">نَوَيْتُ الْوُضُوْءَ لِرَفْعِ الْحَدَثِ الْأَصْغَرِ فَرْضًا لِلّٰهِ
+                                تَعَالَى</p>
+                            <p class="latin">Nawaitul wudhu-a liraf'il hadatsil ashghari fardhan lillaahi ta'aalaa</p>
+                            <p class="translation">Artinya: "Saya niat wudhu untuk menghilangkan hadats kecil, fardhu
+                                karena Allah Ta'ala"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Membasuh Telapak Tangan -->
+                <div class="step-card" data-step="2">
+                    <div class="step-content">
+                        <h2>2. Membasuh Telapak Tangan</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/cuci-tangan.png" alt="Membasuh Telapak Tangan">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Basuh kedua telapak tangan sampai pergelangan tangan sebanyak 3 kali</p>
+                            <p>Baca: بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+                            <p class="translation">Artinya: "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Berkumur-Kumur -->
+                <div class="step-card" data-step="3">
+                    <div class="step-content">
+                        <h2>3. Berkumur-Kumur</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/berkumur.png" alt="Berkumur-Kumur">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Berkumur-kumur sebanyak 3 kali untuk membersihkan mulut</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Membasuh Hidung -->
+                <div class="step-card" data-step="4">
+                    <div class="step-content">
+                        <h2>4. Membasuh Hidung</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/basuh-hidung.png" alt="Membasuh Hidung">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Hirup air dengan hidung sebanyak 3 kali untuk membersihkan rongga hidung, lalu keluarkan
+                                airnya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Membasuh Wajah -->
+                <div class="step-card" data-step="5">
+                    <div class="step-content">
+                        <h2>5. Membasuh Wajah</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/basuh-wajah.png" alt="Membasuh Wajah">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Basuh seluruh wajah dari dahi sampai dagu dan dari telinga ke telinga sebanyak 3 kali</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6: Membasuh Kedua Tangan Hingga Siku -->
+                <div class="step-card" data-step="6">
+                    <div class="step-content">
+                        <h2>6. Membasuh Kedua Tangan Hingga Siku</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/basuh-tangan.png" alt="Membasuh Kedua Tangan Hingga Siku">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Basuh tangan kanan hingga siku sebanyak 3 kali, lalu lakukan hal yang sama pada tangan
+                                kiri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 7: Mengusap Kepala -->
+                <div class="step-card" data-step="7">
+                    <div class="step-content">
+                        <h2>7. Mengusap Kepala</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/usap-kepala.png" alt="Mengusap Kepala">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Usap kepala dari bagian depan hingga bagian belakang satu kali</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 8: Mengusap Kedua Telinga -->
+                <div class="step-card" data-step="8">
+                    <div class="step-content">
+                        <h2>8. Mengusap Kedua Telinga</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/usap-telinga.png" alt="Mengusap Kedua Telinga">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Usap bagian dalam dan luar telinga dengan sisa air dari mengusap kepala</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 9: Membasuh Kedua Kaki Hingga Mata Kaki -->
+                <div class="step-card" data-step="9">
+                    <div class="step-content">
+                        <h2>9. Membasuh Kedua Kaki Hingga Mata Kaki</h2>
+                        <!-- <div class="step-image">
+                            <img src="../assets/wudhu-steps/basuh-kaki.png" alt="Membasuh Kedua Kaki Hingga Mata Kaki">
+                        </div> -->
+                        <div class="step-description">
+                            <p>Basuh kaki kanan hingga mata kaki sebanyak 3 kali, lalu lakukan hal yang sama pada kaki
+                                kiri</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="wudhu-info">
+            <h2>Hal-hal yang Membatalkan Wudhu</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Keluar sesuatu dari dua jalan</h3>
+                    <p>Seperti buang air kecil, buang air besar, atau angin</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Tidur nyenyak</h3>
+                    <p>Tidur dalam kondisi tidak tetap (tidak dalam posisi duduk)</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Hilang akal</h3>
+                    <p>Karena gila, pingsan, mabuk, atau kondisi tidak sadar lainnya</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-hand-paper"></i>
+                    <h3>Menyentuh lawan jenis</h3>
+                    <p>Bersentuhan kulit dengan yang bukan mahram</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer sama seperti index.html -->
+    <footer class="footer">
+        <p>&copy; 2024 Al-Masbah. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/wudhu.js"></script>
+</body>
+
+</html>

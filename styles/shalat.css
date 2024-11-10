@@ -1,0 +1,173 @@
+
+/* Styles khusus untuk halaman panduan shalat */
+.main-content .page-title {
+    margin-top: 4rem;
+}
+
+
+
+.shalat-intro {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 2rem 0;
+
+}
+
+.preparation-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.prep-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prep-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.prep-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.prep-item ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.prep-item ul li::before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.shalat-steps {
+    padding: 2rem;
+}
+
+.step-container {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.step-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.doa-box {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.doa-box .arab {
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    font-family: "Traditional Arabic", serif;
+}
+
+.doa-box .latin {
+    color: #666;
+    font-style: italic;
+}
+
+.shalat-times {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    margin-top: 2rem;
+}
+
+.prayer-times-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.prayer-time {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-time h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.prayer-time p {
+    color: #666;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .preparation-list,
+    .step-container {
+        grid-template-columns: 1fr;
+    }
+
+    .step-item {
+        padding: 1.5rem;
+    }
+
+    .doa-box .arab {
+        font-size: 1.2rem;
+    }
+
+
+    /* .main-content .page-title {
+        margin-top: 3rem;
+    } */
+}
+
+/* Animations */
+.step-item {
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .footer {
+        display: none;
+    }
+
+    .step-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
